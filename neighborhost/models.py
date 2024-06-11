@@ -15,3 +15,5 @@ class Neighbor(AbstractUser):
     zipcode                 = models.ForeignKey(Zipcode, on_delete=models.CASCADE)
     neighborhood            = models.ForeignKey(Neighborhood, on_delete=models.CASCADE, default=0)
     verified                = models.BooleanField(default=False)
+    first_name              = None
+    last_name               = None
