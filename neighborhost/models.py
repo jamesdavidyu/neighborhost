@@ -17,3 +17,8 @@ class Neighbor(AbstractUser):
     verified                = models.BooleanField(default=False)
     first_name              = None
     last_name               = None
+    last_login              = None
+    _is_staff               = False
+    _is_superuser           = False
+
+#class Event(models.Model):
